@@ -1,0 +1,200 @@
+/* containers, sections, background, padding, colors */
+.container-fluid, #testimonials, #press, #cta {
+  background: rgb(253, 41, 123);
+  background: -webkit-linear-gradient(left, rgba(253, 41, 123, 1) 0%, rgba(255, 88, 100, 1) 35%, rgba(255, 101, 91, 1) 100%);
+  background: -o-linear-gradient(left, rgba(253, 41, 123, 1) 0%, rgba(255, 88, 100, 1) 35%, rgba(255, 101, 91, 1) 100%);
+  background: linear-gradient(to right, rgba(253, 41, 123, 1) 0%, rgba(255, 88, 100, 1) 35%, rgba(255, 101, 91, 1) 100%);
+  color: #fff;
+}
+
+#features, #pricing, #footer {
+  background-color: #fff;
+}
+
+#features, .carousel-item, #pricing, #cta {
+  padding: 7% 10%;
+}
+
+.container-fluid {
+  padding: 3% 12% 13%;
+  text-align: left;
+}
+
+#cta .btn {
+  margin: 0 1rem 1rem 0.25rem;
+}
+
+#footer, #footer a {
+  margin: 5rem 1rem 0 0;
+}
+
+/* headings, paragraphs, fonts */
+body {
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+h2 {
+  font-weight: bold;
+}
+
+h3 {
+  color: #fff;
+  font-weight: bold;
+}
+
+#title h1 {
+  margin: 4rem 0 2rem
+}
+
+#cta h1 {
+  padding: 0 20%;
+  margin-bottom: 3rem;
+}
+
+p {
+  color: #808080;
+  font-size: 1.4rem;
+}
+
+.features-p, .pricing-p {
+  margin: 1rem 0 2rem;
+}
+
+#footer p {
+  font-size: 0.75rem;
+}
+
+#pricing .card-body p {
+  color: #000;
+}
+
+.top-logo {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: inherit;
+}
+
+/* minor margins, padding and some styling*/
+.navbar-nav {
+  margin-left: auto;
+}
+
+.nav-item {
+  margin: 0.5rem 2rem;
+  font-size: 1.4rem;
+}
+
+#title .btn {
+  margin: 0 0.25rem 1rem;
+}
+
+#features i {
+  padding: 5rem 0 1rem;
+  background: rgb(253, 41, 123);
+  background: -webkit-linear-gradient(top, rgba(253, 41, 123, 1) 0%, rgba(255, 88, 100, 1) 35%, rgba(255, 101, 91, 1) 100%);
+  background: -o-linear-gradient(top, rgba(253, 41, 123, 1) 0%, rgba(255, 88, 100, 1) 35%, rgba(255, 101, 91, 1) 100%);
+  background: linear-gradient(to right, rgba(253, 41, 123, 1) 0%, rgba(255, 88, 100, 1) 35%, rgba(255, 101, 91, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#press {
+  padding-bottom: 3rem;
+  margin-top: -1px;
+}
+
+/* images, icons, buttons */
+/* top image */
+#title img {
+  position: absolute;
+  top: 20%;
+  left: 58%;
+  z-index: 0;
+  transform: rotate(12deg);
+  margin-top: 2rem;
+}
+
+/* round testimonials images */
+#testimonials img {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+/* press image sizing */
+#press img {
+  width: 18%;
+  margin: 2rem 1.5rem;
+}
+
+/* pricing cards styling */
+#pricing .card {
+  border: 0;
+  margin-bottom: 3rem;
+}
+
+#pricing .card-header {
+  background-color: #000;
+  padding-top: 1rem;
+}
+
+#pricing .card-body {
+  background: rgba(255, 88, 100, 1);
+  background: -webkit-linear-gradient(bottom, rgba(255, 88, 100, 1) 35%, rgba(255, 101, 91, 1) 100%);
+  background: -o-linear-gradient(bottom, rgba(255, 88, 100, 1) 35%, rgba(255, 101, 91, 1) 100%);
+  background: linear-gradient(to top, rgba(255, 88, 100, 1) 35%, rgba(255, 101, 91, 1) 100%);
+}
+
+#pricing .card:hover {
+  filter: drop-shadow(0px 0px 20px #000);
+}
+
+.card-sizing {
+  margin-top: 3rem;
+}
+
+/* go to top page button */
+#top-btn {
+  position: fixed;
+  text-decoration: none;
+  bottom: 10px;
+  right: 20px;
+  z-index: 99;
+  color: #000;
+  font-size: 300%;
+}
+
+/* carousel transition speed */
+.carousel-inner .carousel-item {
+  transition: -webkit-transform 0.8s ease;
+  transition: transform 0.8s ease;
+  transition: transform 0.8s ease, -webkit-transform 0.8s ease;
+}
+
+/* mobile resize */
+/* unflip image and center heading */
+@media (max-width: 1028px) {
+  #title img {
+    position: static;
+    transform: rotateX(0);
+  }
+
+  #title {
+    text-align: center;
+  }
+}
